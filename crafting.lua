@@ -1,42 +1,9 @@
 -- Crafting
 
 minetest.register_craft({
-	output = "moonrealm:airlock",
-	recipe = {
-		{"default:steel_ingot", "default:mese_crystal", "default:steel_ingot"},
-		{"default:steel_ingot", "moonrealm:glass", "default:steel_ingot"},
-		{"default:steel_ingot", "moonrealm:air_cylinder", "default:steel_ingot"},
-	},
-})
-
-minetest.register_craft({
-	output = "moonrealm:airgen",
-	recipe = {
-		{"default:steel_ingot", "default:steel_ingot", "default:steel_ingot"},
-		{"", "moonrealm:air_cylinder", ""},
-		{"default:steel_ingot", "default:steel_ingot", "default:steel_ingot"},
-	},
-})
-
-minetest.register_craft({
-	type = "shapeless",
-	output = "moonrealm:airgen",
-	recipe = {"moonrealm:airgen_empty", "moonrealm:air_cylinder"},
-})
-
-minetest.register_craft({
 	output = "default:water_source",
 	recipe = {
 		{"moonrealm:waterice"},
-	},
-})
-
-minetest.register_craft({
-	output = "moonrealm:hlsource",
-	recipe = {
-		{"moonrealm:appleleaf", "moonrealm:appleleaf", "moonrealm:appleleaf"},
-		{"moonrealm:appleleaf", "moonrealm:waterice", "moonrealm:appleleaf"},
-		{"moonrealm:appleleaf", "moonrealm:appleleaf", "moonrealm:appleleaf"},
 	},
 })
 
@@ -78,32 +45,3 @@ minetest.register_craft({
 	recipe = {"moonrealm:glass", "default:mese_crystal"},
 })
 
-
--- Spacesuit
-
-minetest.register_craft({
-	output = "moonrealm:helmet",
-	recipe = {
-		{"default:mese_crystal"},
-		{"default:glass"},
-		{"default:steel_ingot"},
-	}
-})
-
-minetest.register_craft({
-	output = "moonrealm:lifesupport",
-	recipe = {
-		{"default:steel_ingot","default:steel_ingot" , "default:steel_ingot"},
-		{"default:steel_ingot", "moonrealm:air_cylinder", "default:steel_ingot"},
-		{"default:steel_ingot", "default:mese_crystal", "default:steel_ingot"},
-	}
-})
-
-minetest.register_craft({
-	output = "moonrealm:spacesuit",
-	recipe = {
-		{"wool:white", "moonrealm:helmet", "wool:white"},
-		{"", "moonrealm:lifesupport", ""},
-		{"wool:white", "", "wool:white"},
-	}
-})
