@@ -1,7 +1,7 @@
 -- Do files
 
-dofile(minetest.get_modpath("moonrealm") .. "/nodes.lua")
-dofile(minetest.get_modpath("moonrealm") .. "/crafting.lua")
-dofile(minetest.get_modpath("moonrealm") .. "/functions.lua")
-dofile(minetest.get_modpath("moonrealm") .. "/mapgen.lua")
+dofile(minetest.get_modpath("omg_moonrealm") .. "/nodes.lua")
+dofile(minetest.get_modpath("omg_moonrealm") .. "/crafting.lua")
+dofile(minetest.get_modpath("omg_moonrealm") .. "/functions.lua")
+dofile(minetest.get_modpath("omg_moonrealm") .. "/mapgen.lua")
 

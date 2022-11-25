@@ -1,52 +1,52 @@
 -- Nodes
 
-minetest.register_node("moonrealm:stone", {
+minetest.register_node("omg_moonrealm:stone", {
 	description = "Moon Stone",
-	tiles = {"moonrealm_stone.png"},
+	tiles = {"omg_moonrealm_stone.png"},
 	is_ground_content = false,
 	groups = {cracky = 3},
 	sounds = default.node_sound_stone_defaults(),
 })
 
-minetest.register_node("moonrealm:ironore", {
+minetest.register_node("omg_moonrealm:ironore", {
 	description = "Iron Ore",
-	tiles = {"moonrealm_stone.png^default_mineral_iron.png"},
+	tiles = {"omg_moonrealm_stone.png^default_mineral_iron.png"},
 	is_ground_content = false,
 	groups = {cracky = 2},
 	drop = "default:iron_lump",
 	sounds = default.node_sound_stone_defaults(),
 })
 
-minetest.register_node("moonrealm:copperore", {
+minetest.register_node("omg_moonrealm:copperore", {
 	description = "Copper Ore",
-	tiles = {"moonrealm_stone.png^default_mineral_copper.png"},
+	tiles = {"omg_moonrealm_stone.png^default_mineral_copper.png"},
 	is_ground_content = false,
 	groups = {cracky = 2},
 	drop = "default:copper_lump",
 	sounds = default.node_sound_stone_defaults(),
 })
 
-minetest.register_node("moonrealm:goldore", {
+minetest.register_node("omg_moonrealm:goldore", {
 	description = "Gold Ore",
-	tiles = {"moonrealm_stone.png^default_mineral_gold.png"},
+	tiles = {"omg_moonrealm_stone.png^default_mineral_gold.png"},
 	is_ground_content = false,
 	groups = {cracky = 2},
 	drop = "default:gold_lump",
 	sounds = default.node_sound_stone_defaults(),
 })
 
-minetest.register_node("moonrealm:diamondore", {
+minetest.register_node("omg_moonrealm:diamondore", {
 	description = "Diamond Ore",
-	tiles = {"moonrealm_stone.png^default_mineral_diamond.png"},
+	tiles = {"omg_moonrealm_stone.png^default_mineral_diamond.png"},
 	is_ground_content = false,
 	groups = {cracky = 1},
 	drop = "default:diamond",
 	sounds = default.node_sound_stone_defaults(),
 })
 
-minetest.register_node("moonrealm:dust", {
+minetest.register_node("omg_moonrealm:dust", {
 	description = "Moon Dust",
-	tiles = {"moonrealm_dust.png"},
+	tiles = {"omg_moonrealm_dust.png"},
 	is_ground_content = false,
 	groups = {crumbly = 3},
 	sounds = default.node_sound_sand_defaults({
@@ -54,41 +54,41 @@ minetest.register_node("moonrealm:dust", {
 	}),
 })
 
-minetest.register_node("moonrealm:dustprint1", {
+minetest.register_node("omg_moonrealm:dustprint1", {
 	description = "Moon Dust Footprint 1",
-	tiles = {"moonrealm_dustprint1.png", "moonrealm_dust.png"},
+	tiles = {"omg_moonrealm_dustprint1.png", "omg_moonrealm_dust.png"},
 	is_ground_content = false,
 	groups = {crumbly = 3},
-	drop = "moonrealm:dust",
+	drop = "omg_moonrealm:dust",
 	sounds = default.node_sound_sand_defaults({
 		footstep = {name = "default_sand_footstep", gain = 0.05},
 	}),
 })
 
-minetest.register_node("moonrealm:dustprint2", {
+minetest.register_node("omg_moonrealm:dustprint2", {
 	description = "Moon Dust Footprint 2",
-	tiles = {"moonrealm_dustprint2.png", "moonrealm_dust.png"},
+	tiles = {"omg_moonrealm_dustprint2.png", "omg_moonrealm_dust.png"},
 	is_ground_content = false,
 	groups = {crumbly = 3},
-	drop = "moonrealm:dust",
+	drop = "omg_moonrealm:dust",
 	sounds = default.node_sound_sand_defaults({
 		footstep = {name = "default_sand_footstep", gain = 0.05},
 	}),
 })
 
-minetest.register_node("moonrealm:dusttrack", {
+minetest.register_node("omg_moonrealm:dusttrack", {
 	description = "Moon Rover Track",
-	tiles = {"moonrealm_dusttrack.png", "moonrealm_dust.png"},
+	tiles = {"omg_moonrealm_dusttrack.png", "omg_moonrealm_dust.png"},
 	is_ground_content = false,
 	groups = {crumbly = 3},
-	drop = "moonrealm:dust",
+	drop = "omg_moonrealm:dust",
 	sounds = default.node_sound_sand_defaults({
 		footstep = {name = "default_sand_footstep", gain = 0.05},
 	}),
 })
 
 
-minetest.register_node("moonrealm:waterice", {
+minetest.register_node("omg_moonrealm:waterice", {
 	description = "Water Ice",
 	tiles = {"default_ice.png"},
 	light_source = 1,
@@ -99,7 +99,7 @@ minetest.register_node("moonrealm:waterice", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
-minetest.register_node("moonrealm:glass", {
+minetest.register_node("omg_moonrealm:glass", {
 	description = "Glass",
 	drawtype = "glasslike",
 	tiles = {"default_obsidian_glass.png"},
@@ -110,9 +110,9 @@ minetest.register_node("moonrealm:glass", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
-minetest.register_node("moonrealm:light", {
+minetest.register_node("omg_moonrealm:light", {
 	description = "Light",
-	tiles = {"moonrealm_light.png"},
+	tiles = {"omg_moonrealm_light.png"},
 	paramtype = "light",
 	light_source = 14,
 	is_ground_content = false,
@@ -120,19 +120,19 @@ minetest.register_node("moonrealm:light", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
-minetest.register_node("moonrealm:stonebrick", {
+minetest.register_node("omg_moonrealm:stonebrick", {
 	description = "Moon Stone Brick",
-	tiles = {"moonrealm_stonebricktop.png", "moonrealm_stonebrickbot.png",
-		"moonrealm_stonebrick.png"},
+	tiles = {"omg_moonrealm_stonebricktop.png", "omg_moonrealm_stonebrickbot.png",
+		"omg_moonrealm_stonebrick.png"},
 	is_ground_content = false,
 	groups = {cracky = 3},
 	sounds = default.node_sound_stone_defaults(),
 })
 
-minetest.register_node("moonrealm:stoneslab", {
+minetest.register_node("omg_moonrealm:stoneslab", {
 	description = "Moon Stone Slab",
-	tiles = {"moonrealm_stonebricktop.png", "moonrealm_stonebrickbot.png",
-		"moonrealm_stonebrick.png"},
+	tiles = {"omg_moonrealm_stonebricktop.png", "omg_moonrealm_stonebrickbot.png",
+		"omg_moonrealm_stonebrick.png"},
 	drawtype = "nodebox",
 	paramtype = "light",
 	is_ground_content = false,
@@ -152,10 +152,10 @@ minetest.register_node("moonrealm:stoneslab", {
 	sounds = default.node_sound_stone_defaults(),
 })
 
-minetest.register_node("moonrealm:stonestair", {
+minetest.register_node("omg_moonrealm:stonestair", {
 	description = "Moon Stone Stair",
-	tiles = {"moonrealm_stonebricktop.png", "moonrealm_stonebrickbot.png",
-		"moonrealm_stonebrick.png"},
+	tiles = {"omg_moonrealm_stonebricktop.png", "omg_moonrealm_stonebrickbot.png",
+		"omg_moonrealm_stonebrick.png"},
 	drawtype = "nodebox",
 	paramtype = "light",
 	paramtype2 = "facedir",

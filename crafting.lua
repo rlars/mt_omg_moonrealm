@@ -3,45 +3,45 @@
 minetest.register_craft({
 	output = "default:water_source",
 	recipe = {
-		{"moonrealm:waterice"},
+		{"omg_moonrealm:waterice"},
 	},
 })
 
 minetest.register_craft({
-	output = "moonrealm:stonebrick 4",
+	output = "omg_moonrealm:stonebrick 4",
 	recipe = {
-		{"moonrealm:stone", "moonrealm:stone"},
-		{"moonrealm:stone", "moonrealm:stone"},
+		{"omg_moonrealm:stone", "omg_moonrealm:stone"},
+		{"omg_moonrealm:stone", "omg_moonrealm:stone"},
 	}
 })
 
 minetest.register_craft({
-	output = "moonrealm:stoneslab 4",
+	output = "omg_moonrealm:stoneslab 4",
 	recipe = {
-		{"moonrealm:stone", "moonrealm:stone"},
+		{"omg_moonrealm:stone", "omg_moonrealm:stone"},
 	}
 })
 
 minetest.register_craft({
-	output = "moonrealm:stonestair 4",
+	output = "omg_moonrealm:stonestair 4",
 	recipe = {
-		{"moonrealm:stone", ""},
-		{"moonrealm:stone", "moonrealm:stone"},
+		{"omg_moonrealm:stone", ""},
+		{"omg_moonrealm:stone", "omg_moonrealm:stone"},
 	}
 })
 
 minetest.register_craft({
-	output = "moonrealm:light 8",
+	output = "omg_moonrealm:light 8",
 	recipe = {
-		{"moonrealm:glass", "moonrealm:glass", "moonrealm:glass"},
-		{"moonrealm:glass", "default:mese", "moonrealm:glass"},
-		{"moonrealm:glass", "moonrealm:glass", "moonrealm:glass"},
+		{"omg_moonrealm:glass", "omg_moonrealm:glass", "omg_moonrealm:glass"},
+		{"omg_moonrealm:glass", "default:mese", "omg_moonrealm:glass"},
+		{"omg_moonrealm:glass", "omg_moonrealm:glass", "omg_moonrealm:glass"},
 	},
 })
 
 minetest.register_craft({
 	type = "shapeless",
-	output = "moonrealm:light 1",
-	recipe = {"moonrealm:glass", "default:mese_crystal"},
+	output = "omg_moonrealm:light 1",
+	recipe = {"omg_moonrealm:glass", "default:mese_crystal"},
 })
 

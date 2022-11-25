@@ -8,12 +8,12 @@ local player_pos_previous = {}
 local player_spacesuit = {} -- To avoid unnecessary resetting of character model
 
 local skytextures = {
-	"moonrealm_posy.png",
-	"moonrealm_negy.png",
-	"moonrealm_posz.png",
-	"moonrealm_negz.png",	
-	"moonrealm_negx.png",
-	"moonrealm_posx.png",
+	"omg_moonrealm_posy.png",
+	"omg_moonrealm_negy.png",
+	"omg_moonrealm_posz.png",
+	"omg_moonrealm_negz.png",	
+	"omg_moonrealm_negx.png",
+	"omg_moonrealm_posx.png",
 }
 
 minetest.register_on_joinplayer(function(player)
@@ -64,16 +64,16 @@ minetest.register_globalstep(function(dtime)
 					player_pos_previous[player:get_player_name()].y or
 					player_pos[player:get_player_name()].z ~=
 					player_pos_previous[player:get_player_name()].z then
-				if n_ground == "moonrealm:dust" then
+				if n_ground == "omg_moonrealm:dust" then
 					if math.random() < 0.5 then
 						minetest.add_node(
 							p_groundpl,
-							{name = "moonrealm:dustprint1"}
+							{name = "omg_moonrealm:dustprint1"}
 						)
 					else
 						minetest.add_node(
 							p_groundpl,
-							{name = "moonrealm:dustprint2"}
+							{name = "omg_moonrealm:dustprint2"}
 						)
 					end
 				end
@@ -83,28 +83,6 @@ minetest.register_globalstep(function(dtime)
 				y = player_pos[player:get_player_name()].y,
 				z = player_pos[player:get_player_name()].z
 			}
-		end
-
-		-- Spacesuit. Restore breath, reset spacesuit texture and glove
-		if math.random() < 0.04 then
-			if player:get_inventory():contains_item("main", "moonrealm:spacesuit") then
-				-- Spacesuit in inventory
-				if player:get_breath() < 10 then
-					player:set_breath(10)
-				end
-				if player_spacesuit[player:get_player_name()] == false then
-					player:set_properties({textures = {"moonrealm_space_character.png"}})
-					player_spacesuit[player:get_player_name()] = true
-					player:get_inventory():set_stack("hand", 1, "moonrealm:glove")
-				end
-			else
-				-- No spacesuit in inventory
-				if player_spacesuit[player:get_player_name()] == true then
-					player:set_properties({textures = {"character.png"}})
-					player_spacesuit[player:get_player_name()] = false
-					player:get_inventory():set_stack("hand", 1, "")
-				end
-			end
 		end
 	end
 end)
