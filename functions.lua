@@ -19,7 +19,6 @@ local skytextures = {
 minetest.register_on_joinplayer(function(player)
 	player_pos_previous[player:get_player_name()] = {x = 0, y = 0, z = 0}
 
-	player:set_physics_override(1, 0.6, 0.2) -- Speed, jump, gravity
 	player:set_sky({r = 0, g = 0, b = 0, a = 0}, "skybox", skytextures, false)
 	player:override_day_night_ratio(1)
 end)
